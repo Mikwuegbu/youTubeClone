@@ -50,10 +50,10 @@
 			</nav>
 		</header>
 		<main class="px-4">
-			<div class="grid grid-cols-11 gap-4">
+			<div class="grid grid-flow-col grid-cols-11 gap-4 py-6">
 				<div class="col-span-8">
+					<!-- Video Section with Title and Details -->
 					<div class="">
-						<!-- Video Section with Title and Details -->
 						<iframe
 							class="rounded-xl"
 							width="999"
@@ -64,36 +64,89 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							allowfullscreen
 						></iframe>
+						<!-- the video Details -->
 						<div>
-							<h1 class="font-bold text-2xl py-3">
+							<h1 class="font-bold text-2xl py-2">
 								Smallville, Clark's First Meeting With Superhero Friends
 							</h1>
-							<div class="flex">
-								<div class="flex">
-									<p>Image</p>
-									<div class="">
-										<h1>Declare Faith</h1>
-										<p>5.11k subscribers</p>
+							<!-- the icons : Share, like, dislike, save etc. -->
+							<div class="grid grid-flow-col grid-cols-8 gap-1 py-4">
+								<div class="flex col-span-4">
+									<img
+										src="./assets/userProfile.jpg"
+										alt=""
+										class="h-11 w-11 rounded-full"
+									/>
+									<div class="px-4 pr-8">
+										<h1 class="font-sans font-semibold text-base">
+											Declare Faith
+										</h1>
+										<p class="font-sans text-sm font-normal text-gray-500">
+											5.11k subscribers
+										</p>
 									</div>
 									<button
-										class="font-semibold text-sm bg-black text-white rounded-3xl px-4 h-9 hover:opacity-75"
+										class="font-semibold text-sm bg-black text-white rounded-3xl px-4 h-9 hover:opacity-75 mt-1"
 									>
 										Subscribe
 									</button>
 								</div>
-								<div class="flex space-x-4">
-									<p>like</p>
-									<p>not like</p>
-									<p>share</p>
-									<p>clip</p>
-									<p>Smallville</p>
-									<p>...</p>
+								<div class="flex space-x-2 col-span-4">
+									<div class="relative flex">
+										<button
+											type="button"
+											class="bg-gray-100 px-3 h-9 rounded-l-full outline-none border-r-2 border-gray-300 hover:bg-gray-200"
+										>
+											<i class="fa-solid fa-thumbs-up fa-lg"></i> 10k
+										</button>
+										<button
+											type="button"
+											class="bg-gray-100 px-4 h-9 rounded-r-full hover:bg-gray-200"
+										>
+											<i
+												class="fa-solid fa-thumbs-down fa-flip-horizontal fa-lg"
+											></i>
+										</button>
+									</div>
+									<button
+										type="button"
+										class="bg-gray-100 px-4 h-9 rounded-full hover:bg-gray-200"
+									>
+										<i class="fa-solid fa-share fa-lg"></i> Share
+									</button>
+									<button
+										type="button"
+										class="bg-gray-100 px-4 h-9 rounded-full hover:bg-gray-200"
+									>
+										<i class="fa-solid fa-scissors fa-lg"></i> Clip
+									</button>
+									<button
+										type="button"
+										class="bg-gray-100 px-4 h-9 rounded-full hover:bg-gray-200"
+									>
+										<i class="fa-solid fa-download fa-lg"></i> Save
+									</button>
+									<button
+										type="button"
+										class="bg-gray-100 px-3 h-9 rounded-full hover:bg-gray-200"
+									>
+										<i class="fa-solid fa-ellipsis fa-lg"></i>
+									</button>
+								</div>
+							</div>
+							<div class="px-3 bg-gray-100 rounded-lg py-3">
+								<div class="font-sans font-semibold text-sm">
+									1.6M views 4 years ago
+								</div>
+								<div class="font-sans font-normal text-base">
+									One thing I loved about Smallville is how natural and organic
+									<a href="#" class="font-semibold"> ...more</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-span-3 bg-slate-200 w-full">Column</div>
+				<div class="col-span-7 bg-slate-200 w-full">Column</div>
 			</div>
 		</main>
 		<footer></footer>
