@@ -17,7 +17,7 @@
 		</title>
 	</head>
 	<body class="px-5">
-		<header class="py-4">
+		<header class="py-2">
 			<!-- The Navigation Section -->
 			<nav>
 				<div class="grid grid-cols-11 gap-4">
@@ -40,16 +40,24 @@
 							</button>
 						</div>
 					</div>
-					<div class="flex space-x-5 col-span-3">
-						<i class="fa-solid fa-microphone fa-lg"></i>
-						<i class="fa-solid fa-plus fa-xl"></i>
-						<i class="fa-regular fa-bell fa-xl"></i>
-						<img
-							src="./assets/userProfile.jpg"
-							class="w-8 h-8 rounded-full"
-							alt=""
-							srcset=""
-						/>
+					<div class="flex space-x-48 col-span-3">
+						<i
+							class="fa-solid fa-microphone fa-lg bg-gray-100 hover:bg-gray-200 px-3.5 py-5 rounded-full hover:cursor-pointer"
+						></i>
+						<div class="flex space-x-4">
+							<i
+								class="fa-solid fa-plus fa-xl pt-5 hover:bg-gray-100 px-2.5 py-5 rounded-full hover:cursor-pointer"
+							></i>
+							<i
+								class="fa-regular fa-bell fa-xl pt-5 hover:bg-gray-100 px-2.5 py-5 rounded-full hover:cursor-pointer"
+							></i>
+							<img
+								src="./assets/userProfile.jpg"
+								class="w-8 h-8 rounded-full mt-1 hover:cursor-pointer"
+								alt=""
+								srcset=""
+							/>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -153,8 +161,8 @@
 								<div class="px-1 py-6 flex space-x-6">
 									<h1 class="font-sans font-semibold text-xl">762 Comments</h1>
 									<div class="">
-										<i class="fa-solid fa-arrow-down-wide-short fa-lg"></i> Sort
-										by
+										<i class="fa-solid fa-arrow-down-wide-short fa-lg px-1"></i>
+										Sort by
 									</div>
 								</div>
 								<!-- Add a comment -->
