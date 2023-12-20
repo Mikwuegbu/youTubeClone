@@ -19,7 +19,7 @@
 	<body class="px-5">
 		<header class="py-2">
 			<!-- The Navigation Section -->
-			<nav>
+			<nav class="">
 				<div class="grid grid-cols-11 gap-4">
 					<div class="flex font-sans text-2xl font-thin flex-nowrap col-span-3">
 						<i class="fa-brands fa-youtube py-1 px-1"></i>YouTube
@@ -63,20 +63,23 @@
 			</nav>
 		</header>
 		<main class="px-4">
-			<div class="grid grid-flow-col grid-cols-11 gap-4 py-6">
+			<div class="grid lg:grid-flow-col grid-cols-11 gap-4 py-6">
 				<div class="col-span-8">
 					<!-- Video Section with Title and Details -->
 					<div class="">
-						<iframe
-							class="rounded-xl"
-							width="999"
-							height="562"
-							src="https://www.youtube.com/embed/byfWscC87Vg"
-							title="I&#39;VE BEEN ROBBED"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
+						<div class="">
+							<iframe
+								class=""
+								height="564"
+								width="999"
+								src="https://www.youtube.com/embed/byfWscC87Vg"
+								title="I&#39;VE BEEN ROBBED"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</div>
+
 						<!-- the video Details -->
 						<div>
 							<h1 class="font-bold text-2xl py-2">
@@ -157,7 +160,7 @@
 								</div>
 							</div>
 							<!-- The comment Section -->
-							<div>
+							<div class="hidden lg:block">
 								<div class="px-1 py-6 flex space-x-6">
 									<h1 class="font-sans font-semibold text-xl">762 Comments</h1>
 									<div class="">
